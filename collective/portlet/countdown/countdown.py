@@ -37,7 +37,7 @@ class ICountdownPortlet(IPortletDataProvider):
     image = schema.Choice(title=_(u"Image"),
                                 description=_(u"Select an image to show in the portlet"),
                                 required=False,
-                                source=SearchableTextSourceBinder({'portal_type': ('ATImage', 'Image')}, default_query='path:'))
+                                source=SearchableTextSourceBinder({'portal_type':'Image'}, default_query='path:'))
 
 
 class Assignment(base.Assignment):
