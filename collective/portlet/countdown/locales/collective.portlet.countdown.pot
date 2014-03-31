@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-03-31 16:15+0000\n"
+"POT-Creation-Date: 2014-03-31 16:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,8 +41,18 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
+#. Default: "${countdown} Days ago"
+#: ./countdown.pt:30
+msgid "days_from_text"
+msgstr ""
+
 #. Default: "In ${countdown} Days"
-#: ./countdown.pt:21
+#: ./countdown.pt:22
 msgid "days_to_text"
+msgstr ""
+
+#. Default: "Today"
+#: ./countdown.pt:25
+msgid "days_today_text"
 msgstr ""
 

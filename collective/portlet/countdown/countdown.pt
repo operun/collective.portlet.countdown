@@ -1,7 +1,8 @@
 <dl class="portlet portletCountdownPortlet"
     i18n:domain="collective.portlet.countdown"
     tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
-                image_tag view/data/image_tag;">
+                image_tag view/data/image_tag;
+                countdown view/countdown;">
 
     <dt class="portletHeader">
         <span class="portletTopLeft"></span>
@@ -17,8 +18,16 @@
 			<span tal:replace="structure image_tag" />
 		</span>
 		
-		<span class="countdownDays" i18n:translate="days_to_text">
-			In <span i18n:name="countdown" tal:content="view/countdown" /> Days
+		<span class="countdownDays" i18n:translate="days_to_text" tal:condition="python: countdown>0">
+			In <span i18n:name="countdown" tal:content="countdown" /> Days
+		</span>
+
+		<span class="countdownDays" i18n:translate="days_today_text" tal:condition="python: countdown==0">
+			Today
+		</span>
+
+		<span class="countdownDays" i18n:translate="days_from_text" tal:condition="python: countdown<0">
+			<span i18n:name="countdown" tal:content="python:abs(countdown)" /> Days ago
 		</span>
         
         <span class="countdownDate" tal:define="date view/date">
