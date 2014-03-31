@@ -1,0 +1,26 @@
+<dl class="portlet portletExamplePortlet"
+    i18n:domain="collective.portlet.countdown">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span tal:content="view/data/title">
+           Portlet title
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd" tal:define="image view/image_tag">
+        <span tal:condition="image" tal:replace="structure image" />
+        <span i18n:translate="">In xx days</span>
+        <span tal:content="view/data/date">01.01.2020</span>
+    </dd>
+
+    <dd class="portletFooter" tal:replace="nothing">
+        <span class="portletBottomLeft"></span>
+        <span>
+           Footer
+        </span>
+        <span class="portletBottomRight"></span>
+    </dd>
+
+</dl>
