@@ -1,0 +1,23 @@
+.portletCountdownPortlet .countdownImage {
+	display: block;
+	text-align: center;	
+	margin-bottom: 1em;
+}
+
+.portletCountdownPortlet .countdownDays {
+	display: block;
+	background-color: #DDDDDD;
+	line-height: normal;
+	font-size: 1.2em;
+	padding: 0.42em 1em;
+	color: #000000;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+.portletCountdownPortlet .countdownDate {
+	display: block;
+	text-align: center;
+	font-size: 1em;
+	color: #666666;
+}

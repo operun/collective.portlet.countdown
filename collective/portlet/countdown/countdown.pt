@@ -1,5 +1,7 @@
-<dl class="portlet portletExamplePortlet"
-    i18n:domain="collective.portlet.countdown">
+<dl class="portlet portletCountdownPortlet"
+    i18n:domain="collective.portlet.countdown"
+    tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+                image_tag view/data/image_tag;">
 
     <dt class="portletHeader">
         <span class="portletTopLeft"></span>
@@ -9,10 +11,20 @@
         <span class="portletTopRight"></span>
     </dt>
 
-    <dd class="portletItem odd" tal:define="image view/image_tag">
-        <span tal:condition="image" tal:replace="structure image" />
-        <span i18n:translate="">In xx days</span>
-        <span tal:content="view/data/date">01.01.2020</span>
+    <dd class="portletItem odd">
+
+		<span class="countdownImage" tal:condition="image_tag">
+			<span tal:replace="structure image_tag" />
+		</span>
+		
+		<span class="countdownDays" i18n:translate="days_to_text">
+			In <span i18n:name="countdown" tal:content="view/countdown" /> Days
+		</span>
+        
+        <span class="countdownDate" tal:define="date view/date">
+        	<span tal:replace="python:toLocalizedTime(date)" />
+        </span>
+
     </dd>
 
     <dd class="portletFooter" tal:replace="nothing">

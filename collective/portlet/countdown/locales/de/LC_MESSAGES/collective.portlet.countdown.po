@@ -1,6 +1,3 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,34 +12,34 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.portlet.countdown\n"
+"Domain: DOMAIN\n"
 
 #: ./countdown.py:33
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: ./countdown.py:34
 msgid "Date for the countdown"
-msgstr ""
+msgstr "Datum für den Countdown"
 
 #: ./countdown.py:37
 msgid "Image"
-msgstr ""
+msgstr "Bild"
 
 #: ./countdown.py:38
 msgid "Select an image to show in the portlet"
-msgstr ""
+msgstr "Wählen Sie ein Bild, das in dem Portlet angezeigt werden soll"
 
 #: ./countdown.py:30
 msgid "The title of the portlet."
-msgstr ""
+msgstr "Der Titel des Portlets"
 
 #: ./countdown.py:29
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #. Default: "In ${countdown} Days"
 #: ./countdown.pt:21
 msgid "days_to_text"
-msgstr ""
+msgstr "Noch ${countdown} Tage"
 

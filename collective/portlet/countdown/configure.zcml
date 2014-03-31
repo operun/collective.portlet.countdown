@@ -31,5 +31,10 @@
       addview=".countdown.AddForm"
       editview=".countdown.EditForm"
       />
+
+  <browser:resourceDirectory
+      name="collective.portlet.countdown.static"
+      directory="static"
+      />
   
 </configure>
